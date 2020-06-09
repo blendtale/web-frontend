@@ -50,7 +50,7 @@ const IndexPage = () => {
                 fluid={data.explore.childImageSharp.fluid}
               />
               <h1>
-                Explore new locations, <br /> Share your experiences, <br />{" "}
+                Explore new locations, <br /> Share your experiences, <br />
                 Meet new people
               </h1>
             </div>
@@ -82,14 +82,19 @@ const IndexPage = () => {
             </div>
           </div>
         </div>
-        <div className="center-column">
+        <div className="center-column end-section">
           <Img
             className="image-main"
             fluid={data.mainImage.childImageSharp.fluid}
           />
           <h1 className="text-main">
-            Made for people who love to travel and explore new places
+            For people who love to travel and explore new places
           </h1>
+          <h1 className="request-invite w-100 center-row">
+            Join Waitlist
+            <i className="fas fa-arrow-right"></i>
+          </h1>
+          <div className="coming-soon"></div>
         </div>
       </div>
       <Footer />

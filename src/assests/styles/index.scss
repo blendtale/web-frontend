@@ -31,31 +31,13 @@
       height: 550px !important;
       margin-bottom: 50px;
     }
-    .request-invite {
-      margin-top: 50px;
-      font-size: $headingSize;
-      line-height: 1.6;
-      color: $primaryHeadingColor;
-      margin-bottom: 50px;
-    }
-    .request-invite:hover {
-      margin-top: 50px;
-      font-size: $headingSize;
-      line-height: 1.6;
-      color: $primaryHeadingColor;
-      margin-bottom: 50px;
-      cursor: pointer;
-      opacity: 0.8;
-    }
+
     h1 {
       margin-top: 30px;
       width: 80%;
       font-size: $headingSize;
       line-height: 1.6;
       font-weight: 600;
-    }
-    i {
-      margin-left: 10px;
     }
   }
 
@@ -72,6 +54,31 @@
     line-height: 1.6;
     text-align: center;
     font-weight: 600;
+    margin-bottom: 50px;
+  }
+
+  i {
+    margin-left: 10px;
+  }
+
+  .request-invite {
+    margin-top: 50px;
+    font-size: $headingSize;
+    line-height: 1.6;
+    color: $primaryHeadingColor;
+    margin-bottom: 50px;
+  }
+  .request-invite:hover {
+    margin-top: 50px;
+    font-size: $headingSize;
+    line-height: 1.6;
+    color: $primaryHeadingColor;
+    margin-bottom: 50px;
+    cursor: pointer;
+    opacity: 0.8;
+  }
+  .end-section {
+    margin-bottom: 50px;
   }
 }
 
