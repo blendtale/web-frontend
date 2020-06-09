@@ -1,92 +1,109 @@
 import React, { Component } from "react";
-import "./../../styles/footer.scss";
-
+import "./../../assests/styles/footer.scss";
 import { Link } from "gatsby";
-
-class Footer extends Component {
-  render() {
-    return (
-      <div className="footer-main-class">
-        <div className="row">
-          <div className="col-12 col-sm-12 col-md-3 col-lg-3">
-            <div className="footer-logo-image">
-              <img src={""} alt="footer-logo" className="image-logo-footer" />
-            </div>
-          </div>
-          <div className="col-12 col-sm-6 col-md-3 col-lg-3">
-            <h5>Company</h5>
-            <p>
-              <a className="footer-class" href="#">
-                Our Blog
-              </a>
-            </p>
-            <p>
-              <a className="footer-class" href="/career">
-                Career
-              </a>
-            </p>
-            <p>
-              <a className="footer-class" href="/faq">
-                Frequently Asked Questions
-              </a>
-            </p>
-            <p>
-              <a className="footer-class" href="#">
-                Site Map
-              </a>
-            </p>
-            <p>
-              <a className="footer-class" href="#">
-                Investors Corner
-              </a>
-            </p>
-            <p>
-              <a className="footer-class" href="/privacypolicy">
-                Privacy Policy
-              </a>
-            </p>
-          </div>
-          <div className="col-12 col-sm-6 col-md-3 col-lg-3">
-            <h5>Social links</h5>
-            <p>
-              <a className="footer-class" href="#">
-                Facebook
-              </a>
-            </p>
-            <p>
-              <a className="footer-class" href="#">
-                Twitter
-              </a>
-            </p>
-            <p>
-              <a className="footer-class" href="#">
-                Linkedin
-              </a>
-            </p>
-            <p>
-              <a className="footer-class" href="#">
-                Angellist
-              </a>
-            </p>
-          </div>
-          <div className="col-12 col-sm-12 col-md-2 col-lg-2">
-            <h5>Mail Us</h5>
-            <p>
-              <a className="footer-class" href="#">
-                1/A BGR Energy Building, Slip Road, Film City, Sector 16A,
-                Noida, Uttar Pradesh 201301
-              </a>
-            </p>
-            <p>
-              <a className="footer-class" href="#">
-                +91-8810560137
-              </a>
-            </p>
+import { useStaticQuery, graphql } from "gatsby";
+import Img from "gatsby-image";
+const Footer = () => {
+  const data = useStaticQuery(graphql`
+    query {
+      mainImage: file(relativePath: { eq: "logo/logo.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 350) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `);
+  console.log(data);
+  return (
+    <div className="footer-main-class">
+      <div className="row">
+        <div className="col-12 col-sm-12 col-md-3 col-lg-3">
+          <div className="footer-logo-image">
+            <Img
+              fluid={data.mainImage.childImageSharp.fluid}
+              alt="footer-logo"
+              className="image-logo-footer"
+            />
           </div>
         </div>
+        <div className="col-12 col-sm-6 col-md-2 col-lg-2">
+          <h5>Company</h5>
+          <p>
+            <Link className="footer-class" to="#">
+              Our Blog
+            </Link>
+          </p>
+          <p>
+            <Link className="footer-class" to="/career">
+              Career
+            </Link>
+          </p>
+          <p>
+            <Link className="footer-class" to="/faq">
+              Frequently Asked Questions
+            </Link>
+          </p>
+        </div>
+        <div className="col-12 col-sm-6 col-md-2 col-lg-2">
+          <h5>Resources </h5>
+          <p>
+            <Link className="footer-class" to="#">
+              Site Map
+            </Link>
+          </p>
+          <p>
+            <Link className="footer-class" to="#">
+              Investors Corner
+            </Link>
+          </p>
+          <p>
+            <Link className="footer-class" to="/privacypolicy">
+              Privacy Policy
+            </Link>
+          </p>
+        </div>
+        <div className="col-12 col-sm-6 col-md-2 col-lg-2">
+          <h5>Social links</h5>
+          <p>
+            <Link className="footer-class" to="#">
+              Facebook
+            </Link>
+          </p>
+          <p>
+            <Link className="footer-class" to="#">
+              Twitter
+            </Link>
+          </p>
+          <p>
+            <Link className="footer-class" to="#">
+              Linkedin
+            </Link>
+          </p>
+          <p>
+            <Link className="footer-class" to="#">
+              Angellist
+            </Link>
+          </p>
+        </div>
+        <div className="col-12 col-sm-12 col-md-3 col-lg-3">
+          <h5>Contact Us</h5>
+          <p>
+            <Link className="footer-class" to="#">
+              Floor 19, C-001/A2, <br /> Sector 16B, Noida, <br /> Uttar
+              Pradesh, 201301 <br /> India
+            </Link>
+          </p>
+          <p>
+            <Link className="footer-class" to="#">
+              +91-8810560137
+            </Link>
+          </p>
+        </div>
       </div>
-    );
-  }
-}
+    </div>
+  );
+};
 
 export default Footer;

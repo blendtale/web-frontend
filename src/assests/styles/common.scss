@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600;900&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css");
+
+body {
+  margin: 0px;
+  font-family: "Overpass", sans-serif;
+}
+
+.center-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.center-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.vw-100 {
+  width: 100vw;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.vh-100 {
+  height: 100vh;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.inline-center {
+  display: flex;
+  justify-content: center;
+}
+
+.inline-right {
+  display: flex;
+  justify-content: right;
+}
+
+.row {
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
