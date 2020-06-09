@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "gatsby";
 import { useStaticQuery, graphql } from "gatsby";
 import { Footer } from "./../components/sections";
 import Img from "gatsby-image";
@@ -38,7 +37,6 @@ const IndexPage = () => {
       }
     }
   `);
-  console.log(data);
   return (
     <div className="index-main">
       <div className="center-row">

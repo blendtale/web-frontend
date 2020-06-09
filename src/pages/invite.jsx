@@ -1,4 +1,4 @@
-import React, { Component, useState } from "react";
+import React from "react";
 import { FormInvite } from "../components/sections";
 import "./../assests/styles/invite.scss";
 import { Footer } from "./../components/sections";
