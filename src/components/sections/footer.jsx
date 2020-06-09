@@ -30,15 +30,15 @@ const Footer = () => {
             </Link>
           </div>
         </div>
-        <div className="col-12 col-sm-6 col-md-2 col-lg-2">
+        <div className="col-6 col-sm-6 col-md-2 col-lg-2">
           <h5>Company</h5>
           <p>
-            <Link
+            <a
               className="footer-class"
-              to="https://angel.co/company/blendtale"
+              href="https://angel.co/company/blendtale"
             >
               Career
-            </Link>
+            </a>
           </p>
           <p>
             <Link className="footer-class" to="/faq">
@@ -46,7 +46,7 @@ const Footer = () => {
             </Link>
           </p>
         </div>
-        <div className="col-12 col-sm-6 col-md-2 col-lg-2">
+        <div className="col-6 col-sm-6 col-md-2 col-lg-2">
           <h5>Resources </h5>
           <p>
             <Link className="footer-class" to="#">
@@ -64,20 +64,20 @@ const Footer = () => {
             </Link>
           </p>
         </div>
-        <div className="col-12 col-sm-6 col-md-2 col-lg-2">
+        <div className="col-6 col-sm-6 col-md-2 col-lg-2">
           <h5>Social links</h5>
           <p>
-            <Link
+            <a
               className="footer-class"
-              to="https://www.facebook.com/Blendtale-102809801474035/"
+              href="https://www.facebook.com/Blendtale-102809801474035/"
             >
               Facebook
-            </Link>
+            </a>
           </p>
           <p>
-            <Link className="footer-class" to="https://twitter.com/blendtale">
+            <a className="footer-class" href="https://twitter.com/blendtale">
               Twitter
-            </Link>
+            </a>
           </p>
           <p>
             <Link className="footer-class" to="#">
@@ -85,15 +85,15 @@ const Footer = () => {
             </Link>
           </p>
           <p>
-            <Link
+            <a
               className="footer-class"
-              to="https://angel.co/company/blendtale"
+              href="https://angel.co/company/blendtale"
             >
               Angellist
-            </Link>
+            </a>
           </p>
         </div>
-        <div className="col-12 col-sm-12 col-md-3 col-lg-3">
+        <div className="col-6 col-sm-6 col-md-3 col-lg-3">
           <h5>Contact Us</h5>
           <p>
             <Link className="footer-class" to="#">
