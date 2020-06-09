@@ -1,0 +1,8 @@
+@import "variable.scss";
+
+.faq-main-component {
+  padding-top: 20px;
+  padding-left: $mainLeftPadding;
+  padding-right: $mainRightPadding;
+  padding-bottom: 20px;
+}

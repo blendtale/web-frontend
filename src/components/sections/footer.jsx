@@ -21,11 +21,13 @@ const Footer = () => {
       <div className="row">
         <div className="col-12 col-sm-12 col-md-3 col-lg-3">
           <div className="footer-logo-image">
-            <Img
-              fluid={data.mainImage.childImageSharp.fluid}
-              alt="footer-logo"
-              className="image-logo-footer"
-            />
+            <Link to="/">
+              <Img
+                fluid={data.mainImage.childImageSharp.fluid}
+                alt="footer-logo"
+                className="image-logo-footer"
+              />
+            </Link>
           </div>
         </div>
         <div className="col-12 col-sm-6 col-md-2 col-lg-2">
@@ -57,7 +59,7 @@ const Footer = () => {
             </Link>
           </p>
           <p>
-            <Link className="footer-class" to="/privacypolicy">
+            <Link className="footer-class" to="/privacy">
               Privacy Policy
             </Link>
           </p>

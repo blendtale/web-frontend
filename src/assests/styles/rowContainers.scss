@@ -1,0 +1,41 @@
+@import "variable.scss";
+
+.text-image-column-container-main-class {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  .custom-small-container-class {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    height: 100%;
+  }
+  .hardcodedImageHeight {
+    height: 375px;
+  }
+  .image-column-container {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  h2 {
+    margin-top: 15px;
+    color: $primaryHeadingColor;
+    margin-bottom: 15px;
+  }
+  .image-column-para {
+    font-size: $paraFontSize;
+    text-align: left;
+    font-size: $paraFontSize;
+    max-width: 600px;
+  }
+  .text-image-row-anchor {
+    color: $primaryGreen;
+    font-size: $paraFontSize;
+    margin-top: 70px;
+  }
+  .text-image-row-anchor:hover {
+    color: $hoverGreenColor;
+    text-decoration: none;
+  }
+}
