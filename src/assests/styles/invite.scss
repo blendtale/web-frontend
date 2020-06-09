@@ -1,0 +1,33 @@
+@import "variable.scss";
+
+.login-main {
+  background-color: $lightGreenBackgroundColor;
+  img {
+    height: 375px;
+  }
+
+  h2 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: $primaryHeadingColor;
+  }
+
+  .form-box {
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 7px 14px 0 rgba(60, 66, 87, 0.075),
+      0 3px 6px 0 rgba(19, 15, 64, 0.035);
+    border-radius: 0.2rem;
+  }
+
+  .form-below {
+    margin-top: 50px;
+    .margin-right {
+      margin-right: 50px;
+    }
+    p:hover {
+      cursor: pointer;
+      text-decoration: underline;
+    }
+  }
+}

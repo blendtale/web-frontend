@@ -31,18 +31,16 @@ const Footer = () => {
         <div className="col-12 col-sm-6 col-md-2 col-lg-2">
           <h5>Company</h5>
           <p>
-            <Link className="footer-class" to="#">
-              Our Blog
-            </Link>
-          </p>
-          <p>
-            <Link className="footer-class" to="/career">
+            <Link
+              className="footer-class"
+              to="https://angel.co/company/blendtale"
+            >
               Career
             </Link>
           </p>
           <p>
             <Link className="footer-class" to="/faq">
-              Frequently Asked Questions
+              FAQ
             </Link>
           </p>
         </div>
@@ -67,12 +65,15 @@ const Footer = () => {
         <div className="col-12 col-sm-6 col-md-2 col-lg-2">
           <h5>Social links</h5>
           <p>
-            <Link className="footer-class" to="#">
+            <Link
+              className="footer-class"
+              to="https://www.facebook.com/Blendtale-102809801474035/"
+            >
               Facebook
             </Link>
           </p>
           <p>
-            <Link className="footer-class" to="#">
+            <Link className="footer-class" to="https://twitter.com/blendtale">
               Twitter
             </Link>
           </p>
@@ -82,7 +83,10 @@ const Footer = () => {
             </Link>
           </p>
           <p>
-            <Link className="footer-class" to="#">
+            <Link
+              className="footer-class"
+              to="https://angel.co/company/blendtale"
+            >
               Angellist
             </Link>
           </p>

@@ -64,7 +64,10 @@ const IndexPage = () => {
           <div className="right-content">
             <div className="w-100 right-image-column">
               <div className="w-100 center-column">
-                <h1 className="request-invite w-100 center-row">
+                <h1
+                  onClick={() => (window.location.href = "/invite")}
+                  className="request-invite w-100 center-row"
+                >
                   Join Waitlist
                   <i className="fas fa-arrow-right"></i>
                 </h1>
@@ -82,7 +85,7 @@ const IndexPage = () => {
             </div>
           </div>
         </div>
-        <div className="center-column end-section">
+        <div className="center-column">
           <Img
             className="image-main"
             fluid={data.mainImage.childImageSharp.fluid}
@@ -90,7 +93,10 @@ const IndexPage = () => {
           <h1 className="text-main">
             For people who love to travel and explore new places
           </h1>
-          <h1 className="request-invite w-100 center-row">
+          <h1
+            onClick={() => (window.location.href = "/invite")}
+            className="request-invite w-100 center-row"
+          >
             Join Waitlist
             <i className="fas fa-arrow-right"></i>
           </h1>
