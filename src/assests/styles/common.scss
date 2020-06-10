@@ -54,7 +54,9 @@ body {
   display: flex;
   justify-content: right;
 }
-
+.text-left {
+  text-align: left;
+}
 .row {
   margin-left: 0px !important;
   margin-right: 0px !important;
