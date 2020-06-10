@@ -1,6 +1,6 @@
 @import "variable.scss";
 .index-main {
-  .main-content {
+  .desktop-content {
     max-width: 1566px;
     width: 100%;
     flex: 1;
@@ -20,8 +20,6 @@
         margin-top: 100px;
         width: 450px !important;
         max-width: 90%;
-        font-size: $headingSize;
-        line-height: 1.6;
         margin-bottom: 50px;
         font-weight: 600;
       }
@@ -38,47 +36,77 @@
       h1 {
         margin-top: 30px;
         width: 80%;
-        font-size: $headingSize;
-        line-height: 1.6;
         font-weight: 600;
       }
     }
+  }
+  .mobile-main {
+    .image-mobile {
+      width: 80%;
+      height: 450px;
+      border-radius: 10px;
+      box-shadow: 0 7px 14px 0 rgba(60, 66, 87, 0.075),
+        0 3px 6px 0 rgba(19, 15, 64, 0.035);
+    }
+    h1 {
+      width: 80%;
+      font-size: $headingSizeMobile;
+      margin-top: 30px;
+      margin-bottom: 70px;
+    }
+  }
 
-    .image-main {
-      margin-top: 150px;
-      width: 350px;
-      height: auto;
+  .boxes {
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 7px 14px 0 rgba(60, 66, 87, 0.075),
+      0 3px 6px 0 rgba(19, 15, 64, 0.035);
+    height: 200px;
+    h2 {
+      font-size: $secondaryHeading;
     }
+  }
 
-    .text-main {
-      margin-top: 50px;
-      width: 60%;
-      font-size: $headingSize;
-      line-height: 1.6;
-      text-align: center;
-      font-weight: 600;
-      margin-bottom: 50px;
-    }
+  .image-main {
+    margin-top: 150px;
+    width: 350px;
+    height: auto;
+  }
 
-    i {
-      margin-left: 10px;
-    }
+  .text-main {
+    margin-top: 50px;
+    width: 80%;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 50px;
+  }
 
-    .request-invite {
-      margin-top: 50px;
-      font-size: $headingSize;
-      line-height: 1.6;
-      color: $primaryHeadingColor;
-      margin-bottom: 50px;
+  i {
+    margin-left: 10px;
+  }
+
+  .request-invite {
+    margin-top: 50px;
+    color: $primaryHeadingColor;
+    margin-bottom: 50px;
+  }
+  .request-invite:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+  .end-section {
+    margin-bottom: 50px;
+  }
+
+  @media only screen and (max-width: 1280px) {
+    .boxes {
+      height: 275px;
     }
-    .request-invite:hover {
-      cursor: pointer;
-      opacity: 0.8;
-    }
-    .end-section {
-      margin-bottom: 50px;
-    }
-    @media only screen and (max-width: 600px) {
+  }
+
+  @media only screen and (max-width: 600px) {
+    .desktop-content {
       .left-content {
         display: none;
       }
@@ -86,6 +114,13 @@
       .right-content {
         display: none;
       }
+    }
+    .boxes {
+      height: 200px;
+    }
+
+    .image-main {
+      margin-top: 50px;
     }
   }
 }

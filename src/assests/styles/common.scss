@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600;900&display=swap");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css");
+@import "variable.scss";
 
 body {
   margin: 0px;
@@ -57,4 +58,16 @@ body {
 .row {
   margin-left: 0px !important;
   margin-right: 0px !important;
+}
+
+.h1 {
+  font-size: 36px !important;
+  line-height: 1.6 !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .h1 {
+    $headingMobile: 32px !important;
+    line-height: 1.6 !important;
+  }
 }
