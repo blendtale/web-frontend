@@ -149,7 +149,7 @@ const FormInvite = (props) => {
           <Button
             btnType={3}
             colorType={3}
-            btnText="Create my account"
+            btnText="Requet Invite"
             onClick={onSubmit}
           />
         </div>
