@@ -1,0 +1,38 @@
+@import "variable.scss";
+
+.navbar-padding {
+  padding-left: $mainLeftPadding;
+  padding-right: $mainRightPadding;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.navbar-li {
+  padding-left: 10px;
+  padding-right: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.navbar-text-right {
+  font-weight: 550;
+  font-size: 21px;
+  color: $primaryTextColor;
+}
+
+.navbar-text-right:hover {
+  color: $primaryTextHover;
+  opacity: 0.9;
+  text-decoration: none;
+}
+
+.navbar-text-standout {
+  color: $primaryHeadingColor;
+}
+.navbar-text-standout:hover {
+  opacity: 0.9;
+  color: $primaryHeadingColor;
+}
+.custom-fa-right {
+  color: $primaryHeadingColor;
+}

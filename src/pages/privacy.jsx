@@ -5,10 +5,10 @@ import {
 } from "./../components/layout";
 import "./../assests/styles/privacy_policy.scss";
 import Privacy from "./../assests/images/privacy/privacy.png";
-import { Footer } from "./../components/sections";
+import HeaderFooter from "./../hoc/header-footer";
 const PrivacyPolicy = () => {
   return (
-    <div>
+    <HeaderFooter>
       <div className="privacy-ploicy-main">
         <div className="row">
           <div className="col-12 col-md-12 col-lg-12">
@@ -144,8 +144,7 @@ const PrivacyPolicy = () => {
           </QuestionAndAnswer>
         </div>
       </div>
-      <Footer />
-    </div>
+    </HeaderFooter>
   );
 };
 

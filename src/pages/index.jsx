@@ -1,6 +1,6 @@
 import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
-import { Footer } from "./../components/sections";
+import { Footer, Navbar } from "./../components/sections";
 import Img from "gatsby-image";
 import "./../assests/styles/index.scss";
 
@@ -90,18 +90,15 @@ const IndexPage = () => {
             </div>
           </div>
           <div className="d-block d-md-none mobile-main">
+            <Navbar />
             <div className="center-column">
-              <Img
-                className="image-mobile"
-                fluid={data.explore.childImageSharp.fluid}
-              />
               <h1 className="h1">
                 Explore new locations, <br /> Share your experiences, <br />
                 Meet new people
               </h1>
               <Img
                 className="image-mobile"
-                fluid={data.streetfood.childImageSharp.fluid}
+                fluid={data.explore.childImageSharp.fluid}
               />
               <h1 className="h1">
                 From hidden food corner to new playground. Find and share places
@@ -109,11 +106,15 @@ const IndexPage = () => {
               </h1>
               <Img
                 className="image-mobile"
-                fluid={data.basketball.childImageSharp.fluid}
+                fluid={data.streetfood.childImageSharp.fluid}
               />
               <h1 className="h1">
                 Challenge people next door for friendly matches.
               </h1>
+              <Img
+                className="image-mobile"
+                fluid={data.basketball.childImageSharp.fluid}
+              />
             </div>
           </div>
           <div className="center-column common">
