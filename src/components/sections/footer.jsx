@@ -15,7 +15,6 @@ const Footer = () => {
       }
     }
   `);
-  console.log(data);
   return (
     <div className="footer-main-class">
       <div className="row">
