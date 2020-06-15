@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./../../assests/styles/login-component.scss";
 import { Button } from "./../elements";
 import firebase from "./../../util/firebase";
-import { CountriesList } from "./../../static-datta/index";
+import { CountriesList } from "./../../static-data/index";
 
 const FormInvite = (props) => {
   const [firstName, setFirstName] = useState("");
