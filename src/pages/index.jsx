@@ -152,7 +152,7 @@ const IndexPage = () => {
               fluid={data.mainImage.childImageSharp.fluid}
             />
             <h1 className="h1 text-main">
-              For people who love to travel and explore new places
+              Location based social newotking site
             </h1>
             <div className="column-container"></div>
             <h1
