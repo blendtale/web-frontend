@@ -9,35 +9,35 @@ const IndexPage = () => {
     query {
       basketball: file(relativePath: { eq: "home/basketball.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 400) {
+          fluid(maxWidth: 350) {
             ...GatsbyImageSharpFluid
           }
         }
       }
       explore: file(relativePath: { eq: "home/explore.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 400) {
+          fluid(maxWidth: 350) {
             ...GatsbyImageSharpFluid
           }
         }
       }
       mainImage: file(relativePath: { eq: "logo/logo.png" }) {
         childImageSharp {
-          fluid(maxWidth: 250) {
+          fluid(maxWidth: 150) {
             ...GatsbyImageSharpFluid
           }
         }
       }
       street: file(relativePath: { eq: "home/streetnew.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 400) {
+          fluid(maxWidth: 350) {
             ...GatsbyImageSharpFluid
           }
         }
       }
       trek: file(relativePath: { eq: "home/trek.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 400) {
+          fluid(maxWidth: 350) {
             ...GatsbyImageSharpFluid
           }
         }
