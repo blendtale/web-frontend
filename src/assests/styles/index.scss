@@ -6,30 +6,40 @@
     flex: 1;
     .left-content {
       width: 50%;
-      .image-explore {
-        width: 450px !important;
-        height: 500px !important;
-        max-width: 90%;
+      .starting-image {
+        max-width: 95%;
+        width: 525px !important;
+        .image-explore {
+          width: 450px !important;
+          height: 500px !important;
+          max-width: 100%;
+        }
       }
       .image-basketball {
-        width: 450px !important;
+        width: 525px !important;
         height: 500px !important;
-        max-width: 90%;
+        max-width: 95%;
+        margin-top: 50px;
       }
       h1 {
-        margin-top: 100px;
-        width: 450px !important;
-        max-width: 90%;
-        margin-bottom: 50px;
+        margin-top: 50px;
+        width: 525px !important;
+        max-width: 95%;
         font-weight: 600;
       }
     }
 
     .right-content {
       width: 50%;
-      .image-streetfood {
+      .image-street {
         width: 80%;
-        height: 550px !important;
+        height: 650px !important;
+        margin-bottom: 50px;
+      }
+      .image-trek {
+        margin-top: 50px;
+        width: 80%;
+        height: 475px !important;
         margin-bottom: 50px;
       }
 
@@ -52,7 +62,7 @@
       width: 80%;
       font-size: $headingSizeMobile;
       margin-top: 30px;
-      margin-bottom: 70px;
+      margin-bottom: 20px;
     }
   }
 
