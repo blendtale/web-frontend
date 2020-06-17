@@ -44,7 +44,6 @@ const IndexPage = () => {
       }
     }
   `);
-  console.log(data);
   return (
     <div className="index-main">
       <div className="center-row">
